@@ -25,7 +25,9 @@ SECRET_KEY = 'i&e5#uo4jrr$y$55q+%ks++w!n$$ht5ii(%m#qmb)3vl2u5qc7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# If you are using Docker Tools, replace the IP with the output
+# from `docker-machine ip`
+ALLOWED_HOSTS = ["localhost", "192.168.99.100"]
 
 
 # Application definition
